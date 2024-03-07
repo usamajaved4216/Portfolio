@@ -1,16 +1,20 @@
 import './App.css';
 import Navbar from './component/navbar';
-import { BrowserRouter } from 'react-router-dom';
-import AppRouter from './config/router';
 import Home from './views/home';
+import About from './views/home/about';
+import Service from './views/service';
+import Project from './views/project';
+import Contact from './views/contact';
 
 function App() {
   return (
     <>
-      <BrowserRouter>
         <Navbar />
-        <AppRouter />
-      </BrowserRouter>
+        <Home/>
+        <About/>
+        <Service/>
+        <Project/>
+        <Contact/>
     </>
 
   );
