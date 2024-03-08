@@ -4,7 +4,7 @@ function Contact() {
   return (
     <>
     
-    <div id='contact' style={{ height:'100%', textAlign: 'center', padding: '50px', backgroundColor: 'bisque', borderRadius: '10px', boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)'}}>
+    <div id='contact' style={{ height:'100%', textAlign: 'center', padding: '50px', backgroundColor: 'bisque', borderRadius: '10px', }}>
       <h1 style={{color:'black', fontSize:"50px"}}>CONTACT</h1>
       <p style={{ marginBottom: '30px', color: '#333', fontSize:"30px" }}>Have a question or want to work together?</p>
       <div style={{ margin: '30px 0' }}>

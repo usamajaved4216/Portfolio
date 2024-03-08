@@ -9,11 +9,11 @@ import Contact from './views/contact';
 function App() {
   return (
     <>
-        <Navbar />
-        <Home/>
-        <About/>
-        <Service/>
-        <Project/>
+      <Navbar />
+      <Home />
+      <About />
+      <Service/>
+       <Project/>
         <Contact/>
     </>
 

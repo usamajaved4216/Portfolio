@@ -1,171 +1,220 @@
-/* .App {
-  text-align: center;
-}
+ * {
+   margin: 0;
+   padding: 0;
+ }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+ body {
+   background-color: #06080b;
+   min-height: 100vh;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: #f0f0f0;
+ }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
-
-
-
-
-/* Navbar */
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: #06080b;
-  min-height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #f0f0f0;
-}
-
-/* -----------------------------------//Navbar\\------------------------------------ */
-
-nav {
-  background-color:  #06080b;
-  box-shadow: 3px 3px 5px rgba(81, 14, 30, 0.767);
-  padding-right: 30px;
-  position: fixed;
-  width: 100%;
-  height: 70px;
-  
-}
-
-nav ul {
-  width: 100%;
-  list-style: none;
-  display: flex;
-  /* justify-content: flex-end; */
-  align-items: center;
-}
-
-/* nav li {
-  height: 60px;
-} */
-
-nav ul li {
-  height: 50px;
-  padding: 0 25px ;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  color: rgb(255, 255, 255);
-  transition: transform 0.3s ease;
-}
-
-nav ul li:hover {
+/* ..........navbar......... */
+ nav {
+   background-color: #06080b;
+   box-shadow: 3px 3px 5px rgba(81, 14, 30, 0.767);
+   padding-right: 30px;
+   position: fixed;
+   width: 100%;
+   height: 70px;
+ }
+ nav ul {
+   width: 100%;
+   list-style: none;
+   display: flex;
+   align-items: center;
+ }
+ nav ul li {
+   height: 50px;
+   padding: 0 25px;
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   color: rgb(255, 255, 255);
+   /* transition: transform 0.3s ease; */
+ }
+ /* nav ul li:hover {
   background-color: #bd6b76db;
   transform: scale(1.2);
-}
+} */
 
-nav li:first-child {
-  margin-right: auto;
-}
+ nav li:first-child {
+   margin-right: auto;
+ }
 
-.sidebar {
-  position: fixed;
-  top: 3;
-  right: 0;
-  height: 100vh;
-  width: 250px;
-  background-color: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(12px);
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  list-style: none;
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
+   /*........... hamburger manu....... */
+ .sidebar {
+   position: fixed;
+   top: 3;
+   right: 0;
+   height: 100vh;
+   width: 250px;
+   background-color: rgba(255, 255, 255, 0.15);
+   backdrop-filter: blur(12px);
+   box-shadow: -10px 0 10px rgba(50, 51, 82, 0.834);
+   list-style: none;
+   display: none;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+ }
+ .sidebar li {
+   width: 100%;
+ }
+ .sidebar ul li {
+   width: 100%;
+ }
+ .usamajaved {
+   font-size: 4rem;
+ }
+ .menu-button {
+   display: none;
+ }
 
-.sidebar li {
-  width: 100%;
-}
+   /*............about page........... */
+ .aboutTopLogo {
+   display: none
+ }
+ .about-text-div {
+   width: 50%;
+ }
 
-.sidebar ul li  {
-  width: 100%;
-}
+ /*......... Skill page......... */
+ .skillicons {
+   width: 10%;
+   margin: 10px;
+   text-align: center;
+   font-size: 2rem;
+ }
+ .icon-container {
+   border: 2px solid black;
+   border-radius: 10px;
+   padding: 25%;
+   box-shadow: -10px 0 10px rgba(50, 51, 82, 0.834);
+   transition: transform 0.3s;
+ }
+ .icon-container:hover {
+   transform: scale(1.1);
+ }
 
-.menu-button {
-  display: none;
-}
+ /* ......................................media screen 1000px............................. */
+ @media(max-width: 1000px) {
+
+   /* ...........home page............ */
+   .Home-main-div {
+     flex-wrap: wrap;
+   }
+
+   .homelogo {
+     margin-left: 50%;
+   }
+
+   /*............about page........... */
+   .about-main-div {
+     flex-wrap: wrap;
+   }
+
+   .aboutlogo {
+     padding-left: 50%;
+   }
+
+   .aboutTopLogo {
+     display: block;
+     padding-bottom: 10%;
+   }
+
+   .aboutBottomLogo {
+     display: none;
+   }
+
+   .about-text-div {
+     width: 90%;
+     text-align: center;
+   }
+
+ }
+
+ /* ......................................media screen 800px............................. */
+
+ @media(max-width: 800px) {
+
+   /*........... hamburger manu....... */
+   .hideOnMobile {
+     display: none;
+   }
+
+   .menu-button {
+     display: block;
+   }
+
+   .sidebar {
+     position: fixed;
+     top: 0;
+     right: -300px;
+     height: 100vh;
+     width: 300px;
+     right: -120%;
+     background-color: rgba(255, 255, 255, 0.15);
+     backdrop-filter: blur(12px);
+     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+     list-style: none;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: flex-start;
+     transition: right 0.3s ease-in-out;
+   }
+
+   .sidebar.visible {
+     right: 0;
+   }
+
+   /* ...........home page.......... */
+   .Home-main-div {
+     max-width: 100%;
+   }
+
+   .homelogo {
+     margin: auto;
+   }
+
+ }
+
+ /* ......................................media screen 600px............................. */
+
+ @media(max-width:600px) {
+
+   /*......... Skill page......... */
+   .skillicons {
+     font-size: 1rem;
+   }
 
 
+ }
 
-@media(max-width: 800px) {
-  .hideOnMobile {
-    display: none;
-  }
-  .frontImg{
-    display: none;
-  }
+ /* ......................................media screen 450px............................. */
 
-  .menu-button {
-    display: block;
-  }
+ @media(max-width: 500px) {
 
-  .sidebar {
-    position: fixed;
-    top: 0;
-    right: -300px;
-    height: 100vh;
-    width: 300px;
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(12px);
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    transition: right 0.3s ease-in-out;
-  }
+   /*........... hamburger manu....... */
+   .sidebar {
+     width: 100%;
+     height: 100%;
+   }
 
-  .sidebar.visible {
-    right: 0;
-  }
-}
+   /*......... Homepage.......... */
+   .usamajaved {
+     font-size: 3rem;
+   }
 
-@media(max-width: 450px) {
-  .sidebar {
-    right: -100%;
-    width: 100%;
-  }
-}
+   .homelogo {
+     max-width: 100%;
+     margin: auto;
+   }
 
-/* -----------------------------------//Navbar end\\------------------------------------ */
+   .homelogoimg {
+     max-width: 100%;
+   }
+
+ }

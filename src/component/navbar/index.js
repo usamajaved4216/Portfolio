@@ -22,7 +22,7 @@ const Navbar = () => {
 
           <li><Link to="home" smooth={true} duration={500}>Home</Link></li>
           <li><Link to="about" smooth={true} duration={500}>About</Link></li>
-          <li><Link to="project" smooth={true} duration={500}>Service</Link></li>
+          <li><Link to="service" smooth={true} duration={500}>Service</Link></li>
           <li><Link to="project" smooth={true} duration={500}>Project</Link></li>
           <li><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
         </ul>
@@ -30,7 +30,7 @@ const Navbar = () => {
           <li><Link to="home" smooth={true} duration={500}><a style={{ color: ' #bf2237f1', fontWeight: 'bold', fontSize: '25px',}}>Usama Javed</a></Link></li>
           <li className="hideOnMobile"><Link to="home" smooth={true} duration={500}>Home</Link></li>
           <li className="hideOnMobile"><Link to="about" smooth={true} duration={500}>About</Link></li>
-          <li className="hideOnMobile"><Link to="project" smooth={true} duration={500}>Service</Link></li>
+          <li className="hideOnMobile"><Link to="service" smooth={true} duration={500}>Service</Link></li>
           <li className="hideOnMobile"><Link to="project" smooth={true} duration={500}>Project</Link></li>
           <li className="hideOnMobile"><Link to="contact" smooth={true} duration={500}>Contact</Link></li>
           <li className="menu-button" onClick={showSidebar}><a href="#"><RxHamburgerMenu fontSize={30} /></a></li>
@@ -42,3 +42,11 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+
+
+
+
+
+
+
