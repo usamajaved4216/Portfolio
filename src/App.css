@@ -2,75 +2,62 @@
    margin: 0;
    padding: 0;
  }
-
+ 
  body {
    background-color: #06080b;
    min-height: 100vh;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    color: #f0f0f0;
+   
  }
 
-/* ..........navbar......... */
- nav {
-   background-color: #06080b;
-   box-shadow: 3px 3px 5px rgba(81, 14, 30, 0.767);
-   padding-right: 30px;
-   position: fixed;
-   width: 100%;
-   height: 70px;
- }
- nav ul {
-   width: 100%;
-   list-style: none;
-   display: flex;
-   align-items: center;
- }
- nav ul li {
-   height: 50px;
-   padding: 0 25px;
-   text-decoration: none;
-   display: flex;
-   align-items: center;
-   color: rgb(255, 255, 255);
-   /* transition: transform 0.3s ease; */
- }
- /* nav ul li:hover {
-  background-color: #bd6b76db;
-  transform: scale(1.2);
-} */
+:root {
+	--mainColor: #29335c;
+	--mainColorLight: #5767aa;
+	--secondaryColor: #db2b39;
+	--textColor: #eee;
+}
 
- nav li:first-child {
-   margin-right: auto;
- }
+/* ..........Navbar......... */
+header {
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	height: 80px;
+	padding: 0 2rem;
+	background-color: #06080b;
+	color: var(--textColor);
+}
+header h3:first-child{
+  margin-right: auto;
+}
+a {
+	margin: 0 10px;
+	color: var(--textColor);
+	text-decoration: none;
+}
 
-   /*........... hamburger manu....... */
- .sidebar {
-   position: fixed;
-   top: 3;
-   right: 0;
-   height: 100vh;
-   width: 250px;
-   background-color: rgba(255, 255, 255, 0.15);
-   backdrop-filter: blur(12px);
-   box-shadow: -10px 0 10px rgba(50, 51, 82, 0.834);
-   list-style: none;
-   display: none;
-   flex-direction: column;
-   align-items: flex-start;
-   justify-content: flex-start;
- }
- .sidebar li {
-   width: 100%;
- }
- .sidebar ul li {
-   width: 100%;
- }
- .usamajaved {
-   font-size: 4rem;
- }
- .menu-button {
-   display: none;
- }
+ a:hover {
+	color: var(--secondaryColor);
+}
+
+header .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColor);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+}
+
+header div,
+nav {
+	display: flex;
+	align-items: center;
+}
 
    /*............about page........... */
  .aboutTopLogo {
@@ -98,6 +85,17 @@
    transform: scale(1.1);
  }
 
+ /* ..........contact page........... */
+.contactfont{
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.contactDescrpition{
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 30px;
+}
  /* ......................................media screen 1000px............................. */
  @media(max-width: 1000px) {
 
@@ -139,36 +137,42 @@
 
  @media(max-width: 800px) {
 
-   /*........... hamburger manu....... */
-   .hideOnMobile {
-     display: none;
-   }
+   /*........... Navbar responsive....... */
 
-   .menu-button {
-     display: block;
-   }
+   header .nav-btn {
+		visibility: visible;
+		opacity: 1;
+	}
 
-   .sidebar {
-     position: fixed;
-     top: 0;
-     right: -300px;
-     height: 100vh;
-     width: 300px;
-     right: -120%;
-     background-color: rgba(255, 255, 255, 0.15);
-     backdrop-filter: blur(12px);
-     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-     list-style: none;
-     display: flex;
-     flex-direction: column;
-     align-items: flex-start;
-     justify-content: flex-start;
-     transition: right 0.3s ease-in-out;
-   }
+	header nav {
+		position: fixed;
+		top: -100vh;
+		right: 0;
+		height: 100%;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 1.5rem;
+		background-color: var(--mainColor);
+		transition: 1s;
+	}
 
-   .sidebar.visible {
-     right: 0;
-   }
+	header .responsive_nav {
+		transform: translateY(100vh);
+	}
+
+	nav .nav-close-btn {
+		position: absolute;
+		top: 2rem;
+		right: 2rem;
+	}
+
+	a {
+		font-size: 1.5rem;
+	}
+}
 
    /* ...........home page.......... */
    .Home-main-div {
@@ -179,29 +183,39 @@
      margin: auto;
    }
 
- }
-
  /* ......................................media screen 600px............................. */
 
  @media(max-width:600px) {
+  /* ..............Navbar page......... */
+	header nav {
+		top: -110vh;
+		height: 100%;
+  }
+  
+  header .responsive_nav {
+		transform: translateY(110vh);
+	}
 
    /*......... Skill page......... */
    .skillicons {
-     font-size: 1rem;
-   }
+    width: 15%;
+    font-size: 1rem;
+  }
 
+   /* ........Contact Page....... */
+   .contactDescrpition{
+    font-size: 20px;
+   }
+   .contactfont{
+  font-size: 1.3rem; 
+  }
 
  }
 
- /* ......................................media screen 450px............................. */
+ /* ......................................media screen 500px............................. */
 
  @media(max-width: 500px) {
 
-   /*........... hamburger manu....... */
-   .sidebar {
-     width: 100%;
-     height: 100%;
-   }
 
    /*......... Homepage.......... */
    .usamajaved {
@@ -217,4 +231,9 @@
      max-width: 100%;
    }
 
+   /* ........Contact Page....... */
+   .contactfont{
+    font-size: 1rem; 
+    }
+    
  }
