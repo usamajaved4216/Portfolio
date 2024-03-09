@@ -13,88 +13,94 @@ import { FaGithubSquare } from "react-icons/fa";
 import { SiExpress } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
 import { TbBrandNextjs } from "react-icons/tb";
+import { MdDeveloperMode } from "react-icons/md";
 
 function Service() {
   return (
     <>
-      <div id='service' style={{ background: 'rgb(62, 25, 73)',paddingTop:"10px" }}>
-          <h1 style={{textAlign:'center'}} >Professional Skillset</h1>
+      <div id='service' style={{ background: 'rgb(62, 25, 73)', padding: "10px 0 50px 0" }}>
+        <h1 style={{ textAlign: 'center', margin: '20px' }} >Professional Skillset</h1>
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 
           <div className='skillicons'>
             <div className="icon-container">
-              <a><RiJavascriptFill /></a>
+              <p><RiJavascriptFill /></p>
             </div>
           </div>
           <div className='skillicons'>
             <div className="icon-container">
-              <a><TiHtml5 /></a>
+              <p><TiHtml5 /></p>
             </div>
           </div>
           <div className='skillicons'>
             <div className="icon-container">
-              <a><IoLogoCss3 /></a>
+              <p><IoLogoCss3 /></p>
             </div>
           </div>
           <div className='skillicons'>
             <div className="icon-container">
-              <a><SiTailwindcss /></a>
+              <p><SiTailwindcss /></p>
             </div>
           </div>
           <div className='skillicons'>
             <div className="icon-container">
-              <a><FaBootstrap /></a>
-            </div>
-          </div>
-        </div>
-
-        <div style={{ display:'flex',justifyContent:'center', alignItems:'center' }}>
-          <div className='skillicons'>
-            <div className="icon-container">
-              <a><TbBrandRedux /></a>
-            </div>
-          </div>
-          <div className='skillicons'>
-            <div className="icon-container">
-              <a><LiaNode /></a>
-            </div>
-          </div>
-          <div className='skillicons'>
-            <div className="icon-container">
-              <a><SiFirebase /></a>
-            </div>
-          </div>
-          <div className='skillicons'>
-            <div className="icon-container">
-              <a><IoLogoReact /></a>
-            </div>
-          </div>
-          <div className='skillicons'>
-            <div className="icon-container">
-              <a><SiMongodb /></a>
+              <p><FaBootstrap /></p>
             </div>
           </div>
         </div>
 
-        <div style={{ display:'flex',justifyContent:'center', alignItems:'center' }}>
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <div className='skillicons'>
             <div className="icon-container">
-              <a><FaGithubSquare /></a>
+              <p><TbBrandRedux /></p>
             </div>
           </div>
           <div className='skillicons'>
             <div className="icon-container">
-              <a><SiExpress /></a>
+              <p><LiaNode /></p>
             </div>
           </div>
           <div className='skillicons'>
             <div className="icon-container">
-              <a><BiLogoTypescript /></a>
+              <p><SiFirebase /></p>
             </div>
           </div>
           <div className='skillicons'>
             <div className="icon-container">
-              <a><TbBrandNextjs /></a>
+              <p><IoLogoReact /></p>
+            </div>
+          </div>
+          <div className='skillicons'>
+            <div className="icon-container">
+              <p><SiMongodb /></p>
+            </div>
+          </div>
+        </div>
+
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <div className='skillicons'>
+            <div className="icon-container">
+              <p><FaGithubSquare /></p>
+            </div>
+          </div>
+          <div className='skillicons'>
+            <div className="icon-container">
+              <p><SiExpress /></p>
+            </div>
+          </div>
+          <div className='skillicons'>
+            <div className="icon-container">
+              <p><BiLogoTypescript /></p>
+            </div>
+          </div>
+          <div className='skillicons'>
+            <div className="icon-container">
+              <p><TbBrandNextjs /></p>
+            </div>
+          </div>
+          <div className='skillicons'>
+            <div className="icon-container">
+              <p><MdDeveloperMode /></p>
             </div>
           </div>
         </div>
@@ -103,5 +109,6 @@ function Service() {
     </>
   )
 }
+
 
 export default Service;

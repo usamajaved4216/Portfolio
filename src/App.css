@@ -2,100 +2,122 @@
    margin: 0;
    padding: 0;
  }
- 
+
  body {
    background-color: #06080b;
    min-height: 100vh;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    color: #f0f0f0;
-   
+
  }
 
-:root {
-	--mainColor: #29335c;
-	--mainColorLight: #5767aa;
-	--secondaryColor: #db2b39;
-	--textColor: #eee;
-}
+ :root {
+   --mainColor: #29335c;
+   --mainColorLight: #5767aa;
+   --secondaryColor: #db2b39;
+   --textColor: #eee;
+ }
 
-/* ..........Navbar......... */
-header {
-	display: flex;
-	align-items: center;
-	justify-content: flex-end;
-	height: 80px;
-	padding: 0 2rem;
-	background-color: #06080b;
-	color: var(--textColor);
-}
-header h3:first-child{
-  margin-right: auto;
-}
-a {
-	margin: 0 10px;
-	color: var(--textColor);
-	text-decoration: none;
-}
+ /* ..........Navbar......... */
+ header {
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+   height: 80px;
+   padding: 0 2rem;
+   background-color: #06080b;
+   color: var(--textColor);
+ }
+
+ header h3:first-child {
+   margin-right: auto;
+ }
+
+ a {
+   margin: 0 10px;
+   color: var(--textColor);
+   text-decoration: none;
+ }
 
  a:hover {
-	color: var(--secondaryColor);
-}
+   color: var(--secondaryColor);
+ }
 
-header .nav-btn {
-	padding: 5px;
-	cursor: pointer;
-	background: transparent;
-	border: none;
-	outline: none;
-	color: var(--textColor);
-	visibility: hidden;
-	opacity: 0;
-	font-size: 1.8rem;
-}
+ header .nav-btn {
+   padding: 5px;
+   cursor: pointer;
+   background: transparent;
+   border: none;
+   outline: none;
+   color: var(--textColor);
+   visibility: hidden;
+   opacity: 0;
+   font-size: 1.8rem;
+ }
 
-header div,
-nav {
-	display: flex;
-	align-items: center;
-}
+ header div,
+ nav {
+   display: flex;
+   align-items: center;
+ }
 
-   /*............about page........... */
+ /* ................Home page.......... */
+ .usamajaved{
+  font-size: 4.5rem;
+ }
+ .homedescription{
+  font-size: 1.5rem;
+ }
+
+ /*............about page........... */
  .aboutTopLogo {
    display: none
  }
+
  .about-text-div {
    width: 50%;
  }
 
  /*......... Skill page......... */
  .skillicons {
-   width: 10%;
-   margin: 10px;
-   text-align: center;
-   font-size: 2rem;
+   margin: 10px 20px;
+   width: 10rem;
  }
+
  .icon-container {
    border: 2px solid black;
    border-radius: 10px;
+   font-size: 300%;
+   text-align: center;
    padding: 25%;
    box-shadow: -10px 0 10px rgba(50, 51, 82, 0.834);
    transition: transform 0.3s;
  }
+
  .icon-container:hover {
    transform: scale(1.1);
  }
 
  /* ..........contact page........... */
-.contactfont{
-  color: black;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-.contactDescrpition{
-    margin-bottom: 30px;
-    color: #333;
-    font-size: 30px;
-}
+ .contactfont {
+   color: black;
+   font-size: 1.5rem;
+   font-weight: bold;
+ }
+
+ .contactfontA {
+   color: #0088cc;
+   text-decoration: none;
+   font-weight: bold;
+   font-size: 25px;
+ }
+
+ .contactDescrpition {
+   margin-bottom: 30px;
+   color: #333;
+   font-size: 30px;
+ }
+
  /* ......................................media screen 1000px............................. */
  @media(max-width: 1000px) {
 
@@ -140,75 +162,99 @@ nav {
    /*........... Navbar responsive....... */
 
    header .nav-btn {
-		visibility: visible;
-		opacity: 1;
-	}
-
-	header nav {
-		position: fixed;
-		top: -100vh;
-		right: 0;
-		height: 100%;
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		gap: 1.5rem;
-		background-color: var(--mainColor);
-		transition: 1s;
-	}
-
-	header .responsive_nav {
-		transform: translateY(100vh);
-	}
-
-	nav .nav-close-btn {
-		position: absolute;
-		top: 2rem;
-		right: 2rem;
-	}
-
-	a {
-		font-size: 1.5rem;
-	}
-}
-
-   /* ...........home page.......... */
-   .Home-main-div {
-     max-width: 100%;
+     visibility: visible;
+     opacity: 1;
    }
 
-   .homelogo {
-     margin: auto;
+   header nav {
+     position: fixed;
+     top: -100vh;
+     right: 0;
+     height: 100%;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     gap: 1.5rem;
+     background-color: var(--mainColor);
+     transition: 1s;
    }
+
+   header .responsive_nav {
+     transform: translateY(100vh);
+   }
+
+   nav .nav-close-btn {
+     position: absolute;
+     top: 2rem;
+     right: 2rem;
+   }
+
+   a {
+     font-size: 1.5rem;
+   }
+
+   /* .........skill page.......... */
+   .skillicons {
+     /* margin: 10px 20px; */
+     width: 8rem;
+   }
+
+   .icon-container {
+     font-size: 250%;
+   }
+ }
+
+ /* ...........home page.......... */
+ .Home-main-div {
+   max-width: 100%;
+ }
+
+ .homelogo {
+   margin: auto;
+ }
 
  /* ......................................media screen 600px............................. */
 
  @media(max-width:600px) {
-  /* ..............Navbar page......... */
-	header nav {
-		top: -110vh;
-		height: 100%;
-  }
-  
-  header .responsive_nav {
-		transform: translateY(110vh);
-	}
+
+   /* ..............Navbar page......... */
+   header nav {
+     top: -110vh;
+     height: 100%;
+   }
+
+   header .responsive_nav {
+     transform: translateY(110vh);
+   }
 
    /*......... Skill page......... */
    .skillicons {
-    width: 15%;
-    font-size: 1rem;
-  }
+     margin: 5px 10px;
+     width: 6rem;
+   }
+
+   .icon-container {
+     font-size: 150%;
+   }
 
    /* ........Contact Page....... */
-   .contactDescrpition{
-    font-size: 20px;
+   .contactDescrpition {
+     font-size: 20px;
    }
-   .contactfont{
-  font-size: 1.3rem; 
-  }
+
+   .contactfont {
+     font-size: 1.5rem;
+     display: flex;
+     margin-top: 10px;
+     margin-left: -15px;
+   }
+
+   .contactfontA {
+     font-size: 23px;
+   }
+
 
  }
 
@@ -221,6 +267,9 @@ nav {
    .usamajaved {
      font-size: 3rem;
    }
+   .homedescription{
+    font-size: 1rem;
+   }
 
    .homelogo {
      max-width: 100%;
@@ -231,9 +280,39 @@ nav {
      max-width: 100%;
    }
 
+
+   /* ............skill page........ */
+   .skillicons {
+     margin: 3px 8px;
+     width: 4rem;
+   }
+
+   .icon-container {
+     font-size: 120%;
+   }
+
    /* ........Contact Page....... */
-   .contactfont{
-    font-size: 1rem; 
-    }
-    
+   /* .contactDescrpition {
+    font-size: 20px;
+  } */
+/* 
+   .contactfont {
+     font-size: 1rem;
+     margin-left: -15px;
+   }
+
+   .contactfontA {
+     font-size: 17px;
+   } */
+ 
+
+   .contactfont {
+     font-size: 1rem;
+     margin-left: -20px;
+   }
+
+   .contactfontA {
+     font-size: 17px;
+   }
+
  }
