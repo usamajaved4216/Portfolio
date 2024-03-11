@@ -36,6 +36,7 @@ const Navbar = () => {
 				</button>
 			</header>
 		</>
+	
 	);
 };
 

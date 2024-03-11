@@ -11,8 +11,9 @@
 
  }
 
+
  :root {
-   --mainColor: #29335c;
+   --mainColor:  rgba(2, 3, 5, 0.967);
    --mainColorLight: #5767aa;
    --secondaryColor: #db2b39;
    --textColor: #eee;
@@ -25,8 +26,10 @@
    justify-content: flex-end;
    height: 80px;
    padding: 0 2rem;
-   background-color: #06080b;
+   background-color:  rgba(6, 8, 11, 0.952);
    color: var(--textColor);
+   position: sticky;
+   top: 0;
  }
 
  header h3:first-child {
@@ -36,11 +39,14 @@
  a {
    margin: 0 10px;
    color: var(--textColor);
+   transition: transform 0.3s ease;
    text-decoration: none;
  }
 
  a:hover {
-   color: var(--secondaryColor);
+   /* color: var(--secondaryColor); */
+   transform: scale(1.4);
+   background: var(--secondaryColor);
  }
 
  header .nav-btn {
@@ -62,11 +68,12 @@
  }
 
  /* ................Home page.......... */
- .usamajaved{
-  font-size: 4.5rem;
+ .usamajaved {
+   font-size: 4.5rem;
  }
- .homedescription{
-  font-size: 1.5rem;
+
+ .homedescription {
+   font-size: 1.5rem;
  }
 
  /*............about page........... */
@@ -103,6 +110,8 @@
    color: black;
    font-size: 1.5rem;
    font-weight: bold;
+   display: flex;
+   justify-content: center;
  }
 
  .contactfontA {
@@ -187,17 +196,23 @@
 
    nav .nav-close-btn {
      position: absolute;
-     top: 2rem;
+     top: 1.3rem;
+     font-size: 2.5rem;
      right: 2rem;
    }
 
    a {
      font-size: 1.5rem;
+     transition: transform 0.3s ease;
    }
+ 
+  a:hover {
+    transform: scale(1.4);
+    background: var(--secondaryColor);
+  }
 
    /* .........skill page.......... */
    .skillicons {
-     /* margin: 10px 20px; */
      width: 8rem;
    }
 
@@ -245,16 +260,8 @@
    }
 
    .contactfont {
-     font-size: 1.5rem;
-     display: flex;
      margin-top: 10px;
-     margin-left: -15px;
    }
-
-   .contactfontA {
-     font-size: 23px;
-   }
-
 
  }
 
@@ -267,8 +274,9 @@
    .usamajaved {
      font-size: 3rem;
    }
-   .homedescription{
-    font-size: 1rem;
+
+   .homedescription {
+     font-size: 1rem;
    }
 
    .homelogo {
@@ -292,20 +300,6 @@
    }
 
    /* ........Contact Page....... */
-   /* .contactDescrpition {
-    font-size: 20px;
-  } */
-/* 
-   .contactfont {
-     font-size: 1rem;
-     margin-left: -15px;
-   }
-
-   .contactfontA {
-     font-size: 17px;
-   } */
- 
-
    .contactfont {
      font-size: 1rem;
      margin-left: -20px;
