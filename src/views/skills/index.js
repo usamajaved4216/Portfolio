@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import AOS from 'aos';
 import { RiJavascriptFill } from "react-icons/ri";
 import { TiHtml5 } from "react-icons/ti";
 import { IoLogoCss3 } from "react-icons/io5";
@@ -10,17 +11,23 @@ import { SiFirebase } from "react-icons/si";
 import { IoLogoReact } from "react-icons/io5";
 import { SiMongodb } from "react-icons/si";
 import { FaGithubSquare } from "react-icons/fa";
-import { SiExpress } from "react-icons/si";
 import { BiLogoTypescript } from "react-icons/bi";
+import { SiExpress } from "react-icons/si";
 import { TbBrandNextjs } from "react-icons/tb";
 import { MdDeveloperMode } from "react-icons/md";
 
-function Service() {
+
+function Skills() {
+
+  useEffect(() => {
+    AOS.init({duration:'1000'}); // Initialize AOS library
+}, []);
+
   return (
     <>
-      <div id='service' style={{ background: 'rgb(62, 25, 73)', padding: "10px 0 50px 0" }}>
-        <h1 style={{ textAlign: 'center', margin: '20px' }} >Professional Skillset</h1>
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+      <div id='skills' style={{ background: 'rgb(62, 25, 73)', padding: "10px 0 50px 0" }}>
+        <h1  data-aos="slide-right" style={{ textAlign: 'center', margin: '20px' }} >Professional Skillset</h1>
+        <div  data-aos="fade-right" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
 
           <div className='skillicons'>
             <div className="icon-container">
@@ -49,7 +56,7 @@ function Service() {
           </div>
         </div>
 
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <div data-aos="fade-zoom-out" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <div className='skillicons'>
             <div className="icon-container">
               <p><TbBrandRedux /></p>
@@ -77,7 +84,7 @@ function Service() {
           </div>
         </div>
 
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+        <div data-aos="fade-right" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
           <div className='skillicons'>
             <div className="icon-container">
               <p><FaGithubSquare /></p>
@@ -111,4 +118,4 @@ function Service() {
 }
 
 
-export default Service;
+export default Skills;
