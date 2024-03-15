@@ -15,7 +15,7 @@ const Navbar = () => {
 	return (
 		<>
 			<header>
-				<h3 style={{ color: ' #bf2237f1', fontWeight: 'bold', fontSize: '25px', }}>Usama Javed</h3>
+				<h3 style={{ color: ' #bf2237f1', fontWeight: 'bold', fontSize: '2rem', }}>Usama Javed</h3>
 				<nav ref={navRef}>
 					<Link to="home" smooth={true} duration={500}><a>Home</a></Link>
 					<Link to="about" smooth={true} duration={500}><a>About</a></Link>
